@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-inFile = "c1.txt"
+inFile = "d1.txt"
 target = 2020
 
 def c1():
