@@ -1,5 +1,7 @@
 # advent of code, day 1, challenges 1 and 2
 
+from collections import Counter
+
 inFile = "c1.txt"
 target = 2020
 
@@ -21,13 +23,17 @@ def c2():
             item = int(line.strip())
             items.append(item)
     items.sort() # put items increasing order so we can break
-    item_set = set(items) # for faster lookup
+    item_set = Counter(items) # for faster lookup
 
     for i, item1 in enumerate(items):
         for item2 in items[i+1:]:
             remaining = target - (item1 + item2)
+            if item1 == 10:
+                print(item1, item2, remaining)
             if remaining in item_set:
-                return (item1 * item2 * remaining)
+                C = Counter([item1, item2, remaining])
+                if all(item_set[e] >= C[e] for e in C):
+                    return (item1 * item2 * remaining)
             if remaining <= 0:
                 break
 
