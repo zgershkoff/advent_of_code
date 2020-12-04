@@ -17,7 +17,7 @@ def preprocess():
                 key, val = pair.split(":")
                 d[key] = val
 
-    return c1(passport_list)
+    return c2(passport_list)
 
 def c1(passport_list):
     count = 0
@@ -28,19 +28,6 @@ def c1(passport_list):
     return count
 
 def c2(passport_list):
-    passport_list = []
-    with open(inFile, 'r') as f:
-        d = {}
-        for line in f.readlines():
-            if line.strip() == "":
-                passport_list.append(d)
-                d = {}
-            pairs = line.strip().split()
-            for pair in pairs:
-                key, val = pair.split(":")
-                d[key] = val
-
-    # print(passport_list[-1])
     count = 0
     for d in passport_list:
         if len(d) == 8 or (len(d) == 7 and "cid" not in d):
@@ -58,7 +45,8 @@ def c2(passport_list):
                     check.append(59 <= num <= 76)
                 else:
                     check.append(False)
-            check.append(d["hcl"][0] == "#" and all(c in "0123456789abcdef" for c in d["hcl"][1:]) and len(d["hcl"]) == 7)
+            valid_ch = all(c in "0123456789abcdef" for c in d["hcl"][1:])
+            check.append(d["hcl"][0] == "#" and valid_ch and len(d["hcl"]) == 7)
             check.append(d["ecl"] in eye_colors)
             check.append(d["pid"].isnumeric() and len(d["pid"]) == 9)
 
@@ -69,4 +57,4 @@ def c2(passport_list):
     return count
 
 if __name__ == "__main__":
-    print(c2())
+    print(preprocess())
