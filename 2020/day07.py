@@ -1,6 +1,6 @@
 # day 7, 2020
 
-inFile = "d7.txt"
+inFile = "d07.txt"
 
 from collections import defaultdict
 

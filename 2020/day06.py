@@ -1,6 +1,6 @@
 # day 6, 2020
 
-inFile = "d6.txt"
+inFile = "d06.txt"
 
 def preprocess1():
     answers = []

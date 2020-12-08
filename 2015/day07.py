@@ -13,7 +13,7 @@
 
 from collections import deque
 
-inFile = "d7.txt"
+inFile = "d07.txt"
 
 
 def not_wire(l):

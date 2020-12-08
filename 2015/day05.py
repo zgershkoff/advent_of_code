@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-inFile = "d5.txt"
+inFile = "d05.txt"
 
 vowels = "aeiou"
 bad = {"a": "b", "c": "d", "p": "q", "x": "y"}

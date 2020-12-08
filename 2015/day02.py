@@ -1,6 +1,6 @@
 # 2015 day 2
 
-inFile = 'd2.txt'
+inFile = 'd02.txt'
 
 def c1():
     total = 0

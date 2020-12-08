@@ -1,6 +1,6 @@
 # 2020 day 3
 
-inFile = "d3.txt"
+inFile = "d03.txt"
 
 def c1():
     # by inspection, there are 31 columns

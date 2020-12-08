@@ -1,6 +1,6 @@
 # 2015 day 3
 
-inFile = 'd3.txt'
+inFile = 'd03.txt'
 
 def get_input():
     with open(inFile, 'r') as f:

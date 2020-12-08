@@ -1,6 +1,6 @@
 # 2015 day1
 
-inFile = "d1.txt"
+inFile = "d01.txt"
 
 def c1():
     ans = 0

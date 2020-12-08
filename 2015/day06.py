@@ -2,7 +2,7 @@
 
 import re
 
-inFile = "d6.txt"
+inFile = "d06.txt"
 
 data = []
 grid = [[0 for _ in range(1000)] for _ in range(1000)]

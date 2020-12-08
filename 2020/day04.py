@@ -1,6 +1,6 @@
 # day 4, 2020
 
-inFile = "d4.txt"
+inFile = "d04.txt"
 
 eye_colors = set(["amb", "blu", "brn", "gry", "grn", "hzl", "oth"])
 

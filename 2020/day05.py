@@ -1,6 +1,6 @@
 # day 5, 2020
 
-inFile = "d5.txt"
+inFile = "d05.txt"
 
 d = {"L": "0", "R": "1", "F": "0", "B": "1"}
 

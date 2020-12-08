@@ -1,6 +1,6 @@
 # day 8, 2015
 
-inFile = "d8.txt"
+inFile = "d08.txt"
 
 def count(s):
     loss = 2

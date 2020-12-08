@@ -2,7 +2,7 @@
 
 from itertools import permutations
 
-inFile = "d9.txt"
+inFile = "d09.txt"
 # model graph as dictionary of dictionaries
 g = {}
 

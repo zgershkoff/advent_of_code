@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-inFile = "d2.txt"
+inFile = "d02.txt"
 
 def preprocess():
     total = 0
