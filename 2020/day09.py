@@ -29,14 +29,11 @@ def part1():
 def part2(soln):
     # I'm definitely brute forcing this
     for i in range(len(nums)):
-        # this could be less memory-intensive if just tracked indices
-        # in nums instead of building a new list, but it's fine
-        summands = [nums[i]]
-        while sum(summands) < soln:
-            i += 1
-            summands.append(nums[i])
-            if sum(summands) == soln:
-                return max(summands) + min(summands)
+        j = i + 1
+        while sum(nums[i:j]) < soln:
+            j += 1
+            if sum(nums[i:j]) == soln:
+                return max(nums[i:j]) + min(nums[i:j])
 
 if __name__ == "__main__":
     preprocess()
