@@ -1,7 +1,7 @@
 # day 15, 2020
 
 start = [15,12,0,14,3,1]
-# deep a dictionary number: last index seen
+# keep a dictionary {number: last index seen}
 d = {}
 iters = 30000000
 
