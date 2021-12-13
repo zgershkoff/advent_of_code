@@ -47,9 +47,7 @@ class Hydrothermal():
                 dif = end[0] - start[0] + 1
                 xcoord = start[0]
                 ycoord = start[1]
-                print(start, end, dif)
                 for i in range(dif):
-                    print(xcoord, ycoord)
                     self.grid[xcoord][ycoord] += 1
                     xcoord += 1
                     if start[1] < end[1]:
